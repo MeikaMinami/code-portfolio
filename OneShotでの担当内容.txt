@@ -1,59 +1,14 @@
-ItemScript（各アイテムの情報を入れてる）
-	BananaScripu
-	BavelScript
-	DinamaitoScript
-	EggScript
-	KakashiScript
-	SekibanScript
-		StoryIndexで表示される内容を管理？
-MotionAnim
-	DoMotionCon(AnimationController)
-	testanim(animation)
-OtherScript
-	ScreenShot（撮影シーンのスクショ及び保存）
-SeiScript
-	CharacterNovel
-		●BanbiScript
-		など各キャラクターの情報を管理する、StoryData(ScriptableObject)を入れる
-	NearItemFolder
-		アイテムとキャラクターの情報を実際に持っているScriptableObject
-		●NearEventScript
-			アイテムやキャラクタの近くに行ったときにイベントが発生する
-			UIの管理
-			ミニゲームの管理
-			ダイアログのテキスト表示
-		SoccerBallMove
-		SoccerGoal
-			サッカーのミニゲーム
-		TextLookAtCamera
-			キャラの頭上に出てくるテキストがカメラの方向に向く
-		TextSkipManager
-			テキストをスキップするためのスクリプト
-SlotScene
-	たぶんオープニングのダイアログとスロット
+笑撃の一瞬（OneShot）での担当箇所のスクリプト内容
 
-●BackGroundScroll
+BackGroundScroll
 	背景のRawImageをスクロールさせる
-BarSelect
-	謎
-BikeScript
-	バイクのミニゲーム
-●CameraController
-	最初にマウスで探索シーンのデバッグを行うためのスクリプト
-CameraMinigame
-	ヒーローが通った時にシャッタを押すミニゲーム
-CameraMover
-	使ってないかもしれない
-●CameraSwitcher
+CameraController
+	開発初期段階にマウスで探索シーンの操作のデバッグを行うためのスクリプト
+CameraSwitcher
 	会話するときのカメラに切り替えるスクリプト
-●CharacterController
+CharacterController
 	キャラクターのアニメーションや移動の管理
-Densya
-	電車のミニゲームのためのスクリプト
-GameTimer
-	ミニゲーム用のタイマー
-
-●TansakuModeManager
+TansakuModeManager
 	探索シーンのモード管理
-●TimeCounter
-	左下に出てくる時間経過によってだんだん減っていくタイマー
+TimeCounter
+	左下のUIのタイマーを時間経過によって減らしていく
