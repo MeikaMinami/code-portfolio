@@ -1,0 +1,25 @@
+すごろくベースボール（Sugobe3）での担当箇所のスクリプト内容
+※MM_Script内にあるスクリプトが担当部分となります。
+
+Character
+	Abilty：キャラクターのタイプごとにストライクゾーンを更新
+	PitcherSelect：ピッチャーの投球位置（9マス）を1P・2Pが交互に選択して決定するための処理クラス
+
+Controller
+	PadInput：1Pと2Pのコントローラー入力を他のスクリプトで管理しやすいようにするクラス
+	PlayerJoinManager：PlayerInputManagerを使用して最大2人までのプレイヤー参加を管理
+Data
+	CharacterData:キャラクターの基本情報を管理するためのScriptableObjectクラス
+Manager
+	AudioLoader：Addressablesを使って、音声クリップ（AudioClip）を動的に読み込み、再生・停止
+	BaseBallManager：野球ゲーム関連の複数のクラスを一括管理するシングルトンマネージャー
+	CharacterManager：キャラクターのScriptableObjectデータをまとめて管理
+	GameManager：基本的な環境設定を一括で行うクラス
+	MainScreenManager：画面の切り替えを行うクラス
+	ModeManeger:状況管理を行うモード管理クラス
+	ScreenManager：複数画面のインスタンスを一括管理するシングルトン
+	TitleManager：タイトル画面の表示切替とシーン遷移を管理
+Yakyu
+	BaseBall：ゲーム全体の流れを管理
+	BBR：野球ルールを管理
+BackGrounScroll：背景画像をスクロールするクラス
