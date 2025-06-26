@@ -1,28 +1,29 @@
 すごろくベースボール（Sugobe3）での担当箇所のスクリプト内容
-※MM_Script内にあるスクリプトが担当部分となります。
 
-Character
-	Abilty.cs：キャラクターのタイプごとにストライクゾーンを更新
-	PitcherSelect.cs：ピッチャーの投球位置（9マス）を1P・2Pが交互に選択して決定するための処理クラス
+Sugobe3\Assets\_MM\MM_Script\
+├── BackGrounScroll.cs：背景画像をスクロールするクラス
 
-Controller
-	PadInput.cs：1Pと2Pのコントローラー入力を他のスクリプトで管理しやすいようにするクラス
-	PlayerJoinManager.cs：PlayerInputManagerを使用して最大2人までのプレイヤー参加を管理
-Data
-	CharacterData.cs:キャラクターの基本情報を管理するためのScriptableObjectクラス
+├── Character\
+│   ├── Abilty.cs：キャラクターのタイプごとにストライクゾーンを更新
+│   └── PitcherSelect.cs：投球位置を1P・2Pが選択
 
-Manager
-	AudioLoader.cs：Addressablesを使って、音声クリップ（AudioClip）を動的に読み込み、再生・停止
-	BaseBallManager.cs：野球ゲーム関連の複数のクラスを一括管理するシングルトンマネージャー
-	CharacterManager.cs：キャラクターのScriptableObjectデータをまとめて管理
-	GameManager.cs：基本的な環境設定を一括で行うクラス
-	MainScreenManager.cs：画面の切り替えを行うクラス
-	ModeManeger.cs:状況管理を行うモード管理クラス
-	ScreenManager.cs：複数画面のインスタンスを一括管理するシングルトン
-	TitleManager.cs：タイトル画面の表示切替とシーン遷移を管理
+├── Controller\
+│   ├── PadInput.cs：コントローラー入力を管理しやすくする
+│   └── PlayerJoinManager.cs：プレイヤー参加を管理
 
-Yakyu
-	BaseBall.cs：ゲーム全体の流れを管理
-	BBR.cs：野球ルールを管理
+├── Data\
+│   └── CharacterData.cs：キャラ情報をScriptableObjectで管理
 
-BackGrounScroll.cs：背景画像をスクロールするクラス
+├── Manager\
+│   ├── AudioLoader.cs：音声をAddressablesで動的に読み込み再生
+│   ├── BaseBallManager.cs：野球関連のクラスを一括管理
+│   ├── CharacterManager.cs：キャラデータをまとめて管理
+│   ├── GameManager.cs：環境設定を一括管理
+│   ├── MainScreenManager.cs：画面切り替えを管理
+│   ├── ModeManeger.cs：モードの状態管理
+│   ├── ScreenManager.cs：画面インスタンスを一括管理
+│   └── TitleManager.cs：タイトル画面とシーン遷移を管理
+
+├── Yakyu\
+　   ├── BaseBall.cs：ゲーム全体の流れを管理
+　   └── BBR.cs：野球ルールのロジックを担当
