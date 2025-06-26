@@ -1,14 +1,13 @@
 笑撃の一瞬（OneShot）での担当箇所のスクリプト内容
 
-BackGroundScroll
-	背景のRawImageをスクロールさせる
-CameraController
-	開発初期段階にマウスで探索シーンの操作のデバッグを行うためのスクリプト
-CameraSwitcher
-	会話するときのカメラに切り替えるスクリプト
-CharacterController
-	キャラクターのアニメーションや移動の管理
-TansakuModeManager
-	探索シーンのモード管理
-TimeCounter
-	左下のUIのタイマーを時間経過によって減らしていく
+BackGroundScroll.cs：背景のRawImageをスクロールさせる
+
+CameraController.cs：開発初期段階にマウスで探索シーンの操作のデバッグを行うためのスクリプト
+
+CameraSwitcher.cs：会話するときのカメラに切り替えるスクリプト
+
+CharacterController.cs：キャラクターのアニメーションや移動の管理
+
+TansakuModeManager.cs：探索シーンのモード管理
+
+TimeCounter.cs：左下のUIのタイマーを時間経過によって減らしていく
